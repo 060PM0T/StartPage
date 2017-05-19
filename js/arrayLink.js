@@ -1,3 +1,4 @@
+//масив ссылок
 var arrayLink = {
     '1': {
         'title': 'VK',
@@ -11,19 +12,7 @@ var arrayLink = {
     }
 };
 
+//background
 var background = {
     'back': "url('img/back.jpg')"
 }
-
-Object.size = function(obj) {
-    var size = 0, key;
-    // Бегаем по ключам и считаем их
-    for (key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
-    }
-    // Возвращаем размер
-    return size;
-};
-
-//Длинна массива
-var sizeArrayLink = Object.size(arrayLink);
